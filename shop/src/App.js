@@ -1,8 +1,11 @@
 import './App.css';
+import { useState } from 'react';
 import { Button, Nav, Row, Col, Container } from 'react-bootstrap';
 import mainbg from './bg.jpg';
 
 function App() {
+  let [shoes] = useState();
+
   return (
     <div className="App">
       <Nav defaultActiveKey="/home" as="ul">
